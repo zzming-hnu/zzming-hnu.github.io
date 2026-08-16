@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="张振明（Zymon Zhang）的个人主页。湖南大学计算机技术硕士在读，专注 NLP、模型后训练与 AI Agent 开发。">
+  <meta name="description" content="张振明（Zymon Zhang）的个人主页。湖南大学计算机技术硕士在读，具备 NLP、CV、LLM Agent、模型后训练及前后端开发实践，求职方向为 AI Agent / Agent Infra。">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="张振明（Zymon Zhang）· AI 应用开发者">
-  <meta property="og:description" content="将模型能力工程化为可靠、可评测、可部署的系统。">
+  <meta property="og:title" content="张振明（Zymon Zhang）· AI Agent 工程师">
+  <meta property="og:description" content="面向 AI Agent / Agent Infra，关注模型、工程链路、评测与可靠交付。">
   <meta property="og:image" content="./assets/avatar.jpg">
   <meta property="og:locale" content="zh_CN">
-  <title>张振明（Zymon Zhang）· AI 应用开发者</title>
+  <title>张振明（Zymon Zhang）· AI Agent 工程师</title>
   <link rel="icon" href="./assets/avatar.jpg">
   <link rel="stylesheet" href="./style.css">
   <script type="application/ld+json">
@@ -21,8 +21,13 @@
     "alternateName": "Zymon Zhang",
     "image": "./assets/avatar.jpg",
     "email": "mailto:957957209@qq.com",
-    "jobTitle": "AI 应用开发者",
-    "description": "湖南大学计算机技术硕士在读，预计 2027 年毕业，专注 NLP、模型后训练与 AI Agent 开发。",
+    "jobTitle": "AI Agent / Agent Infra 求职者",
+    "description": "湖南大学计算机技术硕士在读，具备 NLP、CV、LLM Agent、模型后训练及前后端开发实践。",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "长沙",
+      "addressCountry": "中国"
+    },
     "affiliation": {
       "@type": "CollegeOrUniversity",
       "name": "湖南大学"
@@ -46,10 +51,11 @@
       <a class="site-name" href="#top">张振明</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">菜单</button>
       <div class="nav-links" id="nav-links">
-        <a href="#experience">实践经历</a>
-        <a href="#capabilities">个人能力</a>
-        <a href="#projects">项目与方向</a>
-        <a href="#contact">联系</a>
+        <a href="#about">关于我</a>
+        <a href="#experience">实习经历</a>
+        <a href="#capabilities">能力矩阵</a>
+        <a href="#future">未来发展</a>
+        <a href="#contact">联系方式</a>
       </div>
     </nav>
   </header>
@@ -58,56 +64,68 @@
     <section class="intro container" id="top" aria-labelledby="intro-title">
       <img class="avatar" src="./assets/avatar.jpg" width="180" height="180" alt="张振明的头像">
       <div class="intro-copy">
-        <p class="kicker">AI 应用开发者</p>
+        <p class="kicker">AI Agent / Agent Infra</p>
         <h1 id="intro-title">张振明 <span>（Zymon Zhang）</span></h1>
-        <p class="lead">湖南大学计算机技术硕士在读，预计 2027 年毕业。关注 NLP、模型后训练与 AI Agent 开发，致力于将模型能力工程化为<strong>可靠、可评测、可部署</strong>的系统。</p>
-        <div class="contact-links" aria-label="公开联系方式">
-          <a href="mailto:957957209@qq.com">957957209@qq.com</a>
-          <button class="text-button copy-email" type="button" data-email="957957209@qq.com">复制邮箱</button>
-          <a href="https://github.com/zzming-hnu" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://blog.csdn.net/Laollaoaolao" target="_blank" rel="noreferrer">CSDN</a>
-        </div>
+        <p class="lead">湖南大学计算机技术硕士在读，具备 NLP 与 CV 的研究和项目实践。技术方向聚焦 LLM Agent、LLM 后训练及前后端开发，主要使用 Python、Java 与 JavaScript，目前求职方向为 <strong>AI Agent / Agent Infra</strong>。</p>
+        <ul class="profile-tags" aria-label="基本信息">
+          <li><span>所在地</span>中国 / 长沙</li>
+          <li><span>学历</span>硕士</li>
+          <li><span>方向</span>AI Agent / Agent Infra</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container about" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="section-kicker">About</p>
+        <h2 id="about-title">关于我</h2>
+      </div>
+      <div class="about-copy">
+        <p>沿着计算机科班学习路径，我的实践从 CV 项目逐步延伸到 LLM 后训练，并进一步走向面向用户的 ToC Agent 产品研发。</p>
+        <p>我既关注模型与算法效果，也重视数据、工程链路、评测反馈和最终交付，希望把模型能力转化为稳定、可验证的产品能力。目前希望继续深入 Agent 与基础设施方向。</p>
       </div>
     </section>
 
     <section class="section container" id="experience" aria-labelledby="experience-title">
       <div class="section-heading">
-        <p class="section-kicker">Engineering Pipeline</p>
-        <h2 id="experience-title">实践经历</h2>
-        <p>从视觉模型与数据出发，逐步深入 AI 应用系统、模型后训练与 Agent Workflow，并面向 ToC 场景构建 Agent 产品能力。</p>
+        <p class="section-kicker">Internship Experience</p>
+        <h2 id="experience-title">实习经历</h2>
+        <p>从视觉算法、模型后训练到 ToC Agent 产品，持续积累模型研究与工程交付经验。</p>
       </div>
-
       <ol class="pipeline">
-        <li class="pipeline-item">
-          <div class="logo-box"><img src="./assets/china-tower.png" alt="中国铁塔 Logo"></div>
-          <article>
-            <div class="item-meta"><span>中国铁塔</span><time>早期工程实践</time></div>
-            <h3>视觉模型研究</h3>
-            <p>面向耕地、矿山场景开展车辆检测视觉模型研究，围绕场景数据、目标检测与模型效果验证推进算法落地。</p>
-          </article>
-        </li>
         <li class="pipeline-item">
           <div class="logo-box"><img src="./assets/talkweb.png" alt="拓维信息 Logo"></div>
           <article>
-            <div class="item-meta"><span>拓维信息 × 湖南大学</span><time datetime="2025-05/2025-11">2025.05–2025.11</time></div>
-            <h3>高精度路面病害智能视觉巡检</h3>
-            <p>构建 YOLO + SAM 检测与分割链路，围绕真实道路数据推进识别、分割与巡检流程优化；mIoU / Dice 达 90%+，巡检效率提升 40%。</p>
+            <div class="item-meta"><span>拓维信息股份有限公司（TalkWeb）</span><time datetime="2025-05/2025-11">2025.05–2025.11</time></div>
+            <h3>CV 算法工程师</h3>
+            <p class="responsibility">参与道路缺陷质量检测模型的研究</p>
+            <p class="detail">基于 YOLO + SAM 构建检测与分割链路，相关指标达到 90%+，巡检效率提升 40%。</p>
+          </article>
+        </li>
+        <li class="pipeline-item">
+          <div class="logo-box"><img src="./assets/china-tower.png" alt="中国铁塔 Logo"></div>
+          <article>
+            <div class="item-meta"><span>中国铁塔股份有限公司</span></div>
+            <h3>LLM 算法工程师</h3>
+            <p class="responsibility">参与耕地、矿山场景下车辆检测识别算法的研究</p>
           </article>
         </li>
         <li class="pipeline-item">
           <div class="logo-box"><img src="./assets/kuaishou.svg" alt="快手 Logo"></div>
           <article>
-            <div class="item-meta"><span>快手商业化</span><time datetime="2025-11/2026-02">2025.11–2026.02</time></div>
-            <h3>Text2SQL Agent</h3>
-            <p>搭建 LangGraph 工作流，贯通数据合成、SFT / DPO / GRPO、RAG 与 SQL 执行反馈修复；执行准确率 EX 95%+，数据集构建耗时降低 80%，覆盖提升 20%。</p>
+            <div class="item-meta"><span>快手</span><time datetime="2025-11/2026-02">2025.11–2026.02</time></div>
+            <h3>LLM Post-Training 工程师</h3>
+            <p class="responsibility">参与 Text2SQL 链路的研究与开发</p>
+            <p class="detail">贯通数据合成、模型后训练、RAG 与 SQL 执行反馈修复；执行准确率 EX 95%+，数据集构建耗时降低 80%，覆盖提升 20%。</p>
           </article>
         </li>
         <li class="pipeline-item">
           <div class="logo-box"><img src="./assets/tencent.png" alt="腾讯 Logo"></div>
           <article>
-            <div class="item-meta"><span>腾讯 QQ 小Q</span><time datetime="2026-04/2026-08">2026.04–2026.08</time></div>
-            <h3>AI Agent 应用开发</h3>
-            <p>设计混合路由，使 70%+ 请求绕过主 ReAct，准确率达 95%+；构建分层 Agent Memory，并推进个性化主动服务及结构化生成降级能力。</p>
+            <div class="item-meta"><span>腾讯</span><time datetime="2026-04/2026-08">2026.04–2026.08</time></div>
+            <h3>Agent 开发工程师</h3>
+            <p class="responsibility">参与上亿用户产品 QQ 的 AI Agent「小Q」研发</p>
+            <p class="detail">设计混合路由，使 70%+ 请求绕过主 ReAct，准确率达到 95%+；构建分层 Agent Memory，并推进个性化主动服务与结构化生成降级能力。</p>
           </article>
         </li>
       </ol>
@@ -115,28 +133,28 @@
 
     <section class="section container" id="capabilities" aria-labelledby="capabilities-title">
       <div class="section-heading">
-        <p class="section-kicker">Capabilities</p>
-        <h2 id="capabilities-title">个人能力</h2>
-        <p>以完整工程链路组织能力：从数据与模型，到 Agent 系统实现、评测优化和稳定交付。</p>
+        <p class="section-kicker">Capability Matrix</p>
+        <h2 id="capabilities-title">能力矩阵</h2>
+        <p>等级反映个人项目实践侧重，不代表客观考试分数；文字等级优先，离散能力条用于辅助阅读。</p>
       </div>
-      <div class="capability-list">
-        <article><h3>01 · 模型与数据</h3><p>数据合成、蒸馏、语义聚类、SFT、DPO、GRPO、Few-shot；面向任务构建覆盖充分、可训练、可回归的数据资产。</p></article>
-        <article><h3>02 · Agent 系统</h3><p>Multi-Agent、ReAct、MCP、RAG、Memory、Workflow、Function Calling；将不确定的模型调用组织成可控执行链路。</p></article>
-        <article><h3>03 · 评测与优化</h3><p>执行准确率、离线评测、Badcase 分析、回归测试、执行反馈修复；通过指标与案例闭环持续定位系统瓶颈。</p></article>
-        <article><h3>04 · 工程交付</h3><p>Python、Java、JavaScript、SQL、Linux、Docker、Git；RPC / SSE、异步任务、部署排障，覆盖开发到上线的关键环节。</p></article>
+      <div class="matrix" role="list" aria-label="个人能力矩阵">
+        <article class="matrix-row" role="listitem">
+          <div><h3>Agent</h3><p>Multi-Agent、Workflow Agent、ReAct、RAG、Memory、Function Calling</p></div>
+          <div class="level"><strong>核心优势</strong><span class="level-bar" aria-label="项目实践侧重：4 级，共 4 级"><i></i><i></i><i></i><i></i></span></div>
+        </article>
+        <article class="matrix-row" role="listitem">
+          <div><h3>模型后训练</h3><p>数据合成、SFT、DPO、GRPO、评测与反馈优化</p></div>
+          <div class="level"><strong>核心优势</strong><span class="level-bar" aria-label="项目实践侧重：4 级，共 4 级"><i></i><i></i><i></i><i></i></span></div>
+        </article>
+        <article class="matrix-row" role="listitem">
+          <div><h3>后端工程</h3><p>Python、Java、SQL、RPC/SSE、异步任务、Docker/Linux</p></div>
+          <div class="level"><strong>熟练</strong><span class="level-bar" aria-label="项目实践侧重：3 级，共 4 级"><i></i><i></i><i></i><i class="empty"></i></span></div>
+        </article>
+        <article class="matrix-row" role="listitem">
+          <div><h3>前端开发</h3><p>JavaScript、HTML/CSS、交互页面与工程联调</p></div>
+          <div class="level"><strong>实践能力</strong><span class="level-bar" aria-label="项目实践侧重：2 级，共 4 级"><i></i><i></i><i class="empty"></i><i class="empty"></i></span></div>
+        </article>
       </div>
-    </section>
-
-    <section class="section container" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <p class="section-kicker">Projects &amp; Interests</p>
-        <h2 id="projects-title">代表项目 / 关注方向</h2>
-      </div>
-      <ul class="project-list">
-        <li><a href="https://github.com/zzming-hnu/TradingAgents-CN" target="_blank" rel="noreferrer"><strong>TradingAgents-CN</strong><span>多智能体金融分析与协作决策实践</span><span aria-hidden="true">↗</span></a></li>
-        <li><a href="https://github.com/zzming-hnu/good-recording-spec" target="_blank" rel="noreferrer"><strong>good-recording-spec</strong><span>macOS 录屏产品与工程实现案例</span><span aria-hidden="true">↗</span></a></li>
-        <li><a href="https://github.com/zzming-hnu/notes" target="_blank" rel="noreferrer"><strong>notes</strong><span>计算机与 AI 工程学习笔记</span><span aria-hidden="true">↗</span></a></li>
-      </ul>
     </section>
 
     <section class="section container" id="future" aria-labelledby="future-title">
@@ -154,22 +172,20 @@
     <section class="section contact container" id="contact" aria-labelledby="contact-title">
       <div>
         <p class="section-kicker">Contact</p>
-        <h2 id="contact-title">保持联系</h2>
+        <h2 id="contact-title">联系方式</h2>
         <p>欢迎交流 AI Agent、模型后训练与应用系统工程实践。</p>
       </div>
-      <a class="primary-link" href="mailto:957957209@qq.com">发送邮件</a>
+      <div class="contact-links" aria-label="公开联系方式">
+        <a href="mailto:957957209@qq.com"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm2 2v.5l7 5 7-5V7H5Zm14 10V10l-7 5-7-5v7h14Z"/></svg><span>Email</span></a>
+        <a href="https://github.com/zzming-hnu" target="_blank" rel="noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>GitHub</span><span class="sr-only">（在新窗口打开）</span></a>
+        <a href="https://blog.csdn.net/Laollaoaolao" target="_blank" rel="noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm2.8 11.8c1.1.8 2.5 1.2 4.2 1.2 2.6 0 4.4-1.2 4.4-3.2 0-1.6-1-2.5-3.3-3.1-1.5-.4-2-.7-2-1.2 0-.5.5-.8 1.4-.8 1 0 1.9.3 2.8.9l.9-2.1A7.1 7.1 0 0 0 12.5 6C10 6 8.3 7.3 8.3 9.3c0 1.6 1.1 2.6 3.4 3.2 1.4.4 1.9.6 1.9 1.1 0 .5-.5.8-1.5.8-1.2 0-2.4-.4-3.4-1.1l-.9 2.5Z"/></svg><span>CSDN</span><span class="sr-only">（在新窗口打开）</span></a>
+      </div>
     </section>
   </main>
 
   <footer class="footer container">
-    <div class="footer-links">
-      <a href="mailto:957957209@qq.com">Email</a>
-      <a href="https://github.com/zzming-hnu" target="_blank" rel="noreferrer">GitHub</a>
-      <a href="https://blog.csdn.net/Laollaoaolao" target="_blank" rel="noreferrer">CSDN</a>
-    </div>
     <p>© 2026 张振明 <span>· 由 Box AI 通过自然语言生成</span></p>
   </footer>
-
   <button class="back-top" type="button" aria-label="回到顶部">↑</button>
   <script src="./main.js" defer></script>
 </body>
